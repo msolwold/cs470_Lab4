@@ -133,9 +133,7 @@ void printPCB(struct process_control_block *pcb)
  * @param struct process_control_block *
  */
 void parsePCB(FILE *file, struct process_control_block *pcb)
-{
-    fread(pcb, sizeof(struct process_control_block), 1, file);
-    
+{    
     pcb->process_location = ftell(file);
     fread(pcb->process_name, sizeof(char) * 16, 1, file);
     fread(&(pcb->process_id), sizeof(int32_t), 1, file);
