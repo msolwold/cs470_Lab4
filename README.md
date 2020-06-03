@@ -34,7 +34,7 @@ Each PCB in the file is of the following structure:
 
 ## Customization
 
-Per the assignment description, 1 process is executed per second. This can be adjusted via the SLEEP_TIME constant. It is one second for demonstation purposes and will take upwards of 10+ minutes to finish processing the provided .bin file. To see a full run of this program, adjust the SLEEP_TIME constant.
+Per the assignment description, 1 process is executed per "time unit". This can be adjusted via the SLEEP_TIME constant. By default, it is one second for demonstation purposes and will take upwards of 10+ minutes to finish processing the provided .bin file. To see a full run of this program, adjust the SLEEP_TIME constant to .1 seconds or lower (100000 nano seconds).
 
 Similarly, this program swaps Scheduling Algorithms every 30 executions. This can be adjusted via the SCHEDULE_SWAP constant.
 
